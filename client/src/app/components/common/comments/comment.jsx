@@ -55,7 +55,6 @@ const Comment = ({
 Comment.propTypes = {
     content: PropTypes.string,
     createdAt: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    created_at: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     userId: PropTypes.string,
     onRemove: PropTypes.func,
     _id: PropTypes.string

@@ -4,8 +4,10 @@ export function displayDate(data) {
     const yearDif = dateNow.getFullYear() - date.getFullYear();
     if (yearDif === 0) {
         const dayDif = dateNow.getDay() - date.getDay();
+
         if (dayDif === 0) {
             const hourDif = dateNow.getHours() - date.getHours();
+
             if (hourDif === 0) {
                 const minutesDif = dateNow.getMinutes() - date.getMinutes();
 
@@ -19,7 +21,7 @@ export function displayDate(data) {
             return `${date.getHours()}:${date.getMinutes()}`;
         }
 
-        return `${date.getDay()} ${date.toLocaleString("default", {
+        return `${date.getDate()} ${date.toLocaleString("default", {
             month: "long"
         })}`;
     }
